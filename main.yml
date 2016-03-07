@@ -7,8 +7,8 @@
     - vars/main.yml
 
   roles:
-    - geerlingguy.homebrew
-    - geerlingguy.dotfiles
+    - cocooma.homebrew
+    - cocooma.dotfiles
 
   tasks:
     - include: tasks/ansible-setup.yml
