@@ -1,0 +1,73 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_sudoers: yes
+
+dotfiles_repo: https://github.com/cocooma/dotfiles.git
+dotfiles_repo_local_destination: ~/repos/GitHub/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .gitconfig
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
+
+homebrew_installed_packages:
+  - ansible
+  - autoconf
+  - bash-completion
+  - boot2docker
+  - docker
+  - gettext
+  - git
+  - go
+  - gpg
+  - hub
+  - iperf
+  - imagemagick
+  - packer
+  - python
+  - sqlite
+  - mcrypt
+  - npm
+  - nvm
+  - ssh-copy-id
+  - readline
+  - openssl
+  - pv
+  - wget
+  - wrk
+  - brew-cask
+  - zsh
+  - zsh-completions
+
+homebrew_taps:
+  - caskroom/cask
+  - homebrew/binary
+  - homebrew/dupes
+  - homebrew/versions
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - adium
+  - google-chrome
+  - fing
+  - cyberduck
+  - firefox
+  - karabiner
+  - limechat
+  - evernote
+  - iterm2
+  - licecap
+  - macvim
+  - menumeters
+  - sequel-pro
+  - skype
+  - skitch
+  - sublime-text
+  - textmate
+  - vagrant
+  - vagrant-manager
+  - vlc
+  - virtualbox
