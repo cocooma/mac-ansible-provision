@@ -77,7 +77,7 @@ Packages (installed with Homebrew):
     - zsh-completions
   
 
-My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of Mac OS X for better performance and ease of use.
+My [dotfiles](https://github.com/cocooma/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of Mac OS X for better performance and ease of use.
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
