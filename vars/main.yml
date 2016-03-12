@@ -29,6 +29,7 @@ homebrew_installed_packages:
   - packer
   - python
   - sqlite
+  - ssed
   - mcrypt
   - npm
   - nvm
@@ -41,6 +42,7 @@ homebrew_installed_packages:
   - brew-cask
   - zsh
   - zsh-completions
+  - Caskroom/cask/macports
 
 homebrew_taps:
   - caskroom/cask
@@ -71,3 +73,10 @@ homebrew_cask_apps:
   - vagrant-manager
   - vlc
   - virtualbox
+
+gem_installed_packages:
+  - i2cssh
+
+macports_installed_packages:
+  - sfind
+

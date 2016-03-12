@@ -1,0 +1,5 @@
+---
+# ruby gems
+- name: Ensure configured gems packages are installed.
+  gem: "name={{ item }} state=present"
+  with_items: "{{ gem_installed_packages }}"
