@@ -3,4 +3,4 @@
 - name: Ensure configured macports packages are installed.
   macports: "name={{ item }} state=present"
   with_items: "{{ macports_installed_packages }}"
-
+  sudo: yes
