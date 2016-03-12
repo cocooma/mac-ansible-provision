@@ -16,7 +16,6 @@ dotfiles_files:
 homebrew_installed_packages:
   - ansible
   - autoconf
-  - bash-completion
   - boot2docker
   - docker
   - gettext
