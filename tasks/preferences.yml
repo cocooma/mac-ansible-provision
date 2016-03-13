@@ -29,20 +29,11 @@
   sudo: yes
   when: configure_sudoers
 
-# # Clone oh my zsh
-# - name: oh-my-zsh | Clone down repository
-#   git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
-#
-# # Cloning oh-my-zsh powerlevel9k theme
-# - name: oh-my-zsh plugin | Clone down powerlevel9k repo
-#   git: repo=https://github.com/bhilburn/powerlevel9k.git
-#        dest=~/.oh-my-zsh/themes/powerlevel9k.zsh-theme
+# Sudoers configuration (enables more convenient Vagrant usage).
+- name: Export Path
+  copy:
+    src: files/etc/bashrc
+    dest: /etc/bashrc
+    mode: 0444
+  sudo: yes
 
-# # ruby gems
-# - name: Install ruby gems
-#   gem: name=i2cssh
-#        state=latest
-#
-# # mac ports packages
-# - name: Install macports packages
-#   macports: name=sfind state=present

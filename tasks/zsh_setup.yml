@@ -2,8 +2,9 @@
 # Clone oh my zsh
 - name: oh-my-zsh | Clone down repository
   git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
+  update: no
 
 # Cloning oh-my-zsh powerlevel9k theme
 - name: oh-my-zsh plugin | Clone down powerlevel9k repo
-  git: repo=https://github.com/bhilburn/powerlevel9k.git
-       dest=~/.oh-my-zsh/themes/powerlevel9k.zsh-theme
+  git: repo=https://github.com/bhilburn/powerlevel9k.git dest=~/.oh-my-zsh/themes/powerlevel9k.zsh-theme
+  update: no
