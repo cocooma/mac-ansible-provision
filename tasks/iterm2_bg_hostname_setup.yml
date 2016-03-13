@@ -1,0 +1,27 @@
+---
+# create a directory for iterm custom hostname fonts
+- name: Create directory for iterm custom hostname font.
+  file: path=~/.iterm/font state=directory mode=0755
+
+- name: Copy iTerm font.
+  copy:
+    src: iterm_ssh_hostname/SimpleLife.ttf
+    dest: ~/.iterm/font
+    mode: 0440
+
+- name: stat ssh_old
+  stat: path=/usr/bin/ssh_old
+  register: ssh_old_stat
+
+- name: Move ssh to ssh_old
+  command: mv /usr/bin/ssh /usr/bin/ssh_old
+  when: not ssh_old_stat.stat.exists
+  sudo: yes
+
+- name: Copy iTerm background hostname script.
+  copy:
+    src: iterm_ssh_hostname/ssh
+    dest: /usr/bin/ssh
+    owner: root
+    mode: 0755
+  sudo: yes
