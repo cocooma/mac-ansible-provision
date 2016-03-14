@@ -10,18 +10,18 @@
     mode: 0440
 
 - name: stat ssh_old
-  stat: path=/usr/bin/ssh_old
+  stat: path=/opt/local/bin/ssh_old
   register: ssh_old_stat
 
 - name: Move ssh to ssh_old
-  command: mv /usr/bin/ssh /usr/bin/ssh_old
+  command: mv /opt/local/bin/ssh /opt/local/bin/ssh_old
   when: not ssh_old_stat.stat.exists
   sudo: yes
 
 - name: Copy iTerm background hostname script.
   copy:
     src: iterm_ssh_hostname/ssh
-    dest: /usr/bin/ssh
+    dest: /opt/local/bin/ssh
     owner: root
     mode: 0755
   sudo: yes

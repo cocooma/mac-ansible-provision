@@ -75,4 +75,4 @@ convert \
   "/tmp/iTermBG.$$.png"
 set_bg "/tmp/iTermBG.$$.png"
 
-/usr/bin/ssh_old "$@"
+/opt/local/bin/ssh_old "$@"
