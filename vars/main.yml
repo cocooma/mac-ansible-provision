@@ -79,4 +79,5 @@ gem_installed_packages:
 
 macports_installed_packages:
   - sfind
+  - openssh
 
