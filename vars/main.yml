@@ -65,6 +65,7 @@ homebrew_cask_apps:
   - menumeters
   - sequel-pro
   - skype
+  - slack
   - skitch
   - sublime-text
   - textmate

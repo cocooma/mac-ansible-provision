@@ -25,12 +25,12 @@ function __calculate_iterm_window_dimensions {
 DIMENSIONS=$(__calculate_iterm_window_dimensions)
 
 BG_COLOR="#000000"       # Background color
-FG_COLOR="#662020"       # Foreground color
+FG_COLOR="#66ff00"       # Foreground color
 GRAVITY="NorthEast"      # Text gravity (NorthWest, North, NorthEast,
                          # West, Center, East, SouthWest, South, SouthEast)
-OFFSET1="20,10"          # Text offset (host name)
-OFFSET2="20,80"          # Text offset (ip address)
-FONT_SIZE="60"           # Font size in points
+OFFSET1="40,10"          # Text offset (host name)
+OFFSET2="40,40"          # Text offset (ip address)
+FONT_SIZE="20"           # Font size in points
 FONT_STYLE="Normal"      # Font style (Any, Italic, Normal, Oblique)
 # Font path
 FONT="$HOME/.iterm/font/SimpleLife.ttf"
