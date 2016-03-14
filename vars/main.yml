@@ -69,6 +69,7 @@ homebrew_cask_apps:
   - skitch
   - sublime-text
   - textmate
+  - tunnelblick
   - vagrant
   - vagrant-manager
   - vlc
