@@ -17,7 +17,7 @@ This is a work in progress, and is mostly a means for me to document my current 
   3. /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   4. Clone this repository to your local drive.
   5. Run the command `$ sudo ansible-galaxy install -r requirements.txt` inside this directory to install required Ansible roles.
-  6. Run `ansible-playbook main.yml -i inventory --ask-sudo-pass` from the same directory as this README file.
+  6. Run `ansible-playbook main.yml -i inventory --ask-become-pass` from the same directory as this README file.
 
 ## Included Applications / Configuration
 
