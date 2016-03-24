@@ -75,6 +75,7 @@ homebrew_cask_apps:
   - vagrant
   - vagrant-manager
   - vlc
+  - viscosity
   - virtualbox
 
 gem_installed_packages:
