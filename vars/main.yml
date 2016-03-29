@@ -26,6 +26,7 @@ homebrew_installed_packages:
   - gpg
   - hub
   - iperf
+  - jq
   - imagemagick
   - packer
   - python
