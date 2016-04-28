@@ -66,6 +66,7 @@ homebrew_cask_apps:
   - iterm2
   - licecap
   - macvim
+  - macdown
   - menumeters
   - sequel-pro
   - skype
@@ -86,4 +87,3 @@ gem_installed_packages:
 macports_installed_packages:
   - sfind
   - openssh
-
