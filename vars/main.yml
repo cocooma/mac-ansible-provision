@@ -65,6 +65,7 @@ homebrew_cask_apps:
   - evernote
   - iterm2
   - licecap
+  - github-desktop
   - macvim
   - macdown
   - menumeters
