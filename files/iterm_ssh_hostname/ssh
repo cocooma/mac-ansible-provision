@@ -9,7 +9,7 @@ if [ "$(tty)" == 'not a tty' ] || [ "$TERM_PROGRAM" != "iTerm.app" ] ; then
 fi
 
 function __calculate_iterm_window_dimensions {
-  local size=( $(osascript -e "tell application \"iTerm\"
+  local size=( $(osascript -e "tell application \"iTerm2\"
     get bounds of window 1
   end tell" | tr ',' ' ') )
 
@@ -44,17 +44,10 @@ RESOLVED_IP=`echo -e "$output"|grep '^ip_address:'|awk '{print $2}'`
 function set_bg {
   local tty=$(tty)
   osascript -e "
-    tell application \"iTerm\"
-      repeat with theTerminal in terminals
-        tell theTerminal
-          try
-            tell session id \"$tty\"
-              set background image path to \"$1\"
-            end tell
-          on error errmesg number errn
-          end try
-        end tell
-      end repeat
+    tell application \"iTerm2\"
+      tell current session of first window
+        set background image to \"$1\"
+      end tell
     end tell"
 }
 
