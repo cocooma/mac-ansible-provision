@@ -1,0 +1,5 @@
+---
+# python pip
+- name: Ensure configured pip packages are installed.
+  pip: "name={{ item }} state=present"
+  with_items: "{{ pip_installed_packages }}"

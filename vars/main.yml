@@ -59,7 +59,6 @@ homebrew_cask_apps:
   - google-chrome
   - fing
   - cyberduck
-  - codebox
   - firefox
   - karabiner
   - limechat
@@ -89,3 +88,6 @@ gem_installed_packages:
 macports_installed_packages:
   - sfind
   - openssh
+
+pip_installed_packages:
+  - csvkit

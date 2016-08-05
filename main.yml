@@ -14,6 +14,7 @@
     - include: tasks/ansible-setup.yml
     - include: tasks/preferences.yml
     - include: tasks/gem_packages.yml
+    - include: tasks/pip_packages.yml
     - include: tasks/macports_packages.yml
     - include: tasks/zsh_setup.yml
     - include: tasks/iterm2_bg_hostname_setup.yml
