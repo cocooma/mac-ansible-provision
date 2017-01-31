@@ -29,6 +29,28 @@
   sudo: yes
   when: configure_sudoers
 
+# Setup touch_id pam monudle and config
+- name: Copy sudo pam lib for touch_id
+  copy:
+    src: files/usr/local/lib/pam
+    dest: /usr/local/lib
+    directory_mode: yes
+    mode: 0444
+    owner: "root"
+    group: "wheel"
+  sudo: yes
+  when: configure_sudoers
+
+- name: Copy sudo config for touch_id
+  copy:
+    src: files/etc/pam.d/sudo
+    dest: /etc/pam.d/sudo
+    mode: 0444
+    owner: "root"
+    group: "wheel"
+  sudo: yes
+  when: configure_sudoers
+
 # Sudoers configuration (enables more convenient Vagrant usage).
 - name: Export Path
   copy:
