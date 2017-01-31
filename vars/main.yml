@@ -92,3 +92,22 @@ macports_installed_packages:
 
 pip_installed_packages:
   - csvkit
+
+atom_packages:
+  - autocomplete-go
+  - builder-go
+  - environment
+  - file-icons
+  - go-config
+  - go-get
+  - go-plus
+  - gofmt
+  - gometalinter-linter
+  - gorename
+  - json-converter
+  - language-terraform
+  - linter
+  - linter-govet
+  - multi-cursor
+  - navigator-godef
+  - tester-go
